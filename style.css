@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(8, 8, 105);
+    color: white;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin-top: 8rem;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    border: 2px solid white;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    height: auto;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-color: white;
+    margin: 0 auto;
+}
+
+#input-city {
+    background-color: rgb(8, 8, 105);
+    color: white;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+#btnsearch {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.parent {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 3rem;
+    background-color: white;
+}
+
+.child {
+    background-color: white;
+    height: 70px;
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.child p,
+.child span {
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-size: 1rem;
+}
+
+h1,
+img {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .parent {
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+
+    .child {
+        height: auto;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main {
+        max-width: 450px;
+    }
+
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
